@@ -1,0 +1,23 @@
+Sub SubRoutine()
+  Dim MayI As Variant
+
+  MayI = CreateArray
+  MayI(1) = "What?"
+  MayI(2) = "What"
+  MayI(3) = "Wha"
+  MayI(4) = "Wh"
+  For X = 1 To 4
+      MsgBox (MayI(X))
+  Next X
+  TestPass (MayI)
+
+End Sub
+
+Function TestPass(Arr As Variant)
+  TestPass = Arr
+End Function
+
+Function CreateArray() As Variant
+  Dim Array1(1 To 4) As Variant
+  CreateArray = Array1
+End Function
