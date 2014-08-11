@@ -1,0 +1,6 @@
+var someArray = new Array();
+someArray[0] = "some value";
+someArray[1] = "some other value";
+
+var userValue = prompt("Enter a user value");
+someArray[someArray.length] = userValue;
